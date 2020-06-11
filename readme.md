@@ -8,6 +8,10 @@ Cookie Notice allows you to elegantly inform users that your site uses cookies a
 
 For more information, check out plugin page at [dFactory](http://www.dfactory.eu/) or plugin [support forum](http://www.dfactory.eu/support/forum/cookie-notice/).
 
+### Changes, Feature added by Georg Nebel
+* Close button cookie refused
+* Call JS function loadOnConsent on cookie accept if function exist
+
 ### Features include: ###
 
 * Customize the cookie message
