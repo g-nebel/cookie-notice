@@ -142,7 +142,8 @@
 					_this.showRevokeNotice();
 				} );
 			}
-			//alert('consent - cookieValue: ' + cookieValue + ' cookiesAccepted: ' + this.cookiesAccepted);
+
+			// call loadOnConsent() ?
 			if ((typeof loadOnConsent === "function") && ( cookieValue === 'true' )  ) {
 				loadOnConsent();
 			}
