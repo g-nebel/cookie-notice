@@ -142,8 +142,11 @@
 					_this.showRevokeNotice();
 				} );
 			}
-
-			// redirect?
+			//alert('consent - cookieValue: ' + cookieValue + ' cookiesAccepted: ' + this.cookiesAccepted);
+			if ((typeof loadOnConsent === "function") && ( cookieValue === 'true' )  ) {
+				loadOnConsent();
+			}
+				// redirect?
 			if ( cnArgs.redirection === '1' && ( ( cookieValue === 'true' && this.cookiesAccepted === null ) || ( cookieValue !== this.cookiesAccepted && this.cookiesAccepted !== null ) ) ) {
 				var url = window.location.protocol + '//',
 					hostname = window.location.host + '/' + window.location.pathname;
